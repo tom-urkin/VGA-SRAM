@@ -89,6 +89,6 @@ always @(posedge i_clk or negedge i_rst)
   
 
 //Next cycle pixel coordinates. Frame indexing: [0:639]x[0:479]
-assign next_x_cor = count_h; //(count_h<ACTIVE_HORIZONTAL) ? count_h : $bits(next_x_cor)'(ACTIVE_HORIZONTAL-1);
-assign next_y_cor = count_v; //(count_v<ACTIVE_VERTICAL) ? count_v : $bits(next_y_cor)'(ACTIVE_HORIZONTAL-1);
+assign next_x_cor = count_h;
+assign next_y_cor = count_v;
 endmodule

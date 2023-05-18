@@ -2,7 +2,7 @@
 
 > SystemVerilog Pseudo-random number generation and visualization    
 
-This repository includes source files in SystemVerilog of the required sub-modules for generating pseudo-random numbers by cellular-automaton, storing them on an external SRAM IC and visualizaing them on a monitor via a VGA controller. Altera DE-115 development board is used here for practical verification since it includes both VGA connector and external SRAM IC.
+This repository includes source files in SystemVerilog of the required sub-modules for generating pseudo-random numbers by cellular-automaton, storing them on an external SRAM IC and visualizaing them on a monitor via a VGA controller. Altera DE-115 development board is used here for practical verification since it includes both VGA connector and external SRAM IC (IS61WV102416BLL).
 
 ## VGA Driver
 To drive a [VGA](https://en.wikipedia.org/wiki/Video_Graphics_Array) screen, you need to manipulate two digital synchronization pins, HSYNC and VSYNC, and three analog color pins, namely RED, GREEN, and BLUE. The HSYNC pin informs the screen about moving to the next row of pixels, while the VSYNC pin signals the start of a new frame.
@@ -18,14 +18,11 @@ Verification is carried by continiously trasmitting constant horizontal data, re
 
 ![VGA Verification](./docs/VGA_Verification.jpg) 
 
-
-## SRAM controller
-In progress
-
 ## CA-PRNGs, SRAM and VGA controller integration
-In progress
-
-![SPI_High_ARCH](./docs/RTL.JPG) 
+A conceptual block diagram of the overall system is shown below. It comprises:
+1. Two instantiations of PRNG modules. Please refer to the dedicted ![repository](https://github.com/tom-urkin/PRNG) for for information.
+2. Two instantiations of N-bit to N-byte converters with zero-pedding to comply with 640 frame width. This module produces an 8-bit word with in a given color from a XXX
+ 
 
 
 ## Support
