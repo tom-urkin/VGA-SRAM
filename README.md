@@ -27,7 +27,14 @@ A conceptual block diagram of the overall system is shown below. It comprises:
 
 ![Block_diagram](./docs/Block_Diagram.jpg) 
  
+### Timing diagrams
+Timing diagrams for write and read operations are added here to improve understading of the system's internal signals.
+![write](./docs/Timing_wr.jpg) 
 
+![read](./docs/Timing_rd.jpg) 
+
+## Demonstration
+XXX
 
 ## Support
 
