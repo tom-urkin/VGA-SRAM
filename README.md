@@ -36,7 +36,7 @@ Timing diagrams for write and read operations are added here to improve understa
 ## Demonstration
 Demonstration of 'Rule 30' in red and 'Rule 126' in red. Exploration of other patterns, i.e. different rules, can be easily done via the 'RULE' parameter in the PRNG modules.
 
-            ![demonstration](./docs/vid.gif) 
+![demonstration](./docs/vid.gif) 
 
 ## Support
 
