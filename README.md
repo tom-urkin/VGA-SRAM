@@ -38,6 +38,12 @@ Demonstration of 'Rule 30' in red and 'Rule 126' in red. Exploration of other pa
 
 ![demonstration](./docs/vid.gif) 
 
+demonstration of rule '30':
+![rule30](./docs/rule30.jpg) 
+
+demonstration of rule '126':
+![rule126](./docs/rule126.jpg) 
+
 ## Support
 
 I will be happy to answer any questions.  
